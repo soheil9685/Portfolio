@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fonts */
+@font-face {
+    font-family: Roboto;
+    src: url("./assets/fonts/Roboto-VariableFont_wdth\,wght.ttf");
+}
+@font-face {
+    font-family: Tungsten;
+    src: url("./assets/fonts/tungsten-narrow-bold.ttf");
+}
+@font-face {
+    font-family: Unbuntu;
+    src: url("./assets/fonts/Ubuntu-Regular.ttf");
+}
+
+.roboto{
+    font-family: Roboto;
+}
+.tungsten{
+    font-family: Tungsten;
+}
+.unbuntu{
+    font-family: Unbuntu;
+}
