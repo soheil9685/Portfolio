@@ -1,0 +1,28 @@
+nav {
+    background-color: #1E2022;
+}
+.nav-link {
+    color: #C9D6DF !important;
+    font-size: 200px;
+}
+.offcanvas{
+    background-color: #1E2022 !important;
+}
+b{
+    color: #C9D6DF;
+}
+.icon{
+    width: 100px;
+}
+.media-link{
+    color: #C9D6DF;
+    transition: all 0.5s;
+}
+.media-link:hover{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    color: #FFF4B7;
+    cursor: pointer;
+}
+.navbar-toggler-icon {
+  filter: invert(1);
+}

@@ -1,8 +1,12 @@
 import "./App.css"
+import MyNavbar from "./components/Navbar/MyNavbar";
 
-function App(){
-    return(
-        <h1>App</h1>
+function App() {
+    return (
+        <>
+            <MyNavbar />
+            <h1>App</h1>
+        </>
     )
 }
 
