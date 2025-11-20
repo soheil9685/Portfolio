@@ -8,6 +8,7 @@ import { useEffect } from "react";
 import SkillItem from "./components/Skills/SkillItem";
 import ProjectItem from "./components/Projects/ProjectItem";
 import Contact from "./components/Contact/Contact";
+import Footer from "./components/Footer/Footer";
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
             <SkillItem />
             <ProjectItem />
             <Contact />
+            <Footer />
         </>
     )
 }

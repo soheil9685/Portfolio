@@ -38,7 +38,7 @@ function Contact() {
     ]
 
     return (
-        <Container className="mt-5">
+        <Container id="ContactMe" className="mt-5">
             <h1 data-aos="zoom-in" className="roboto pt-5 text-center">Contact Me</h1>
             <Row className="mt-4 d-flex align-items-center">
                 <Col className="col-12 col-lg-6 text-center">
