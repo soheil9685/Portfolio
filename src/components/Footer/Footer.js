@@ -9,7 +9,7 @@ function Footer() {
             <div className="container-fluid">
                 <Container>
                     <Row>
-                        <Col>
+                        <Col className="col-12 col-lg-6">
                             <h5 style={{ color: "#FF6500" }} className="roboto">Portfolio.</h5>
                             <div className="linkContainer mt-4">
                                 <a className="border-circle mx-2 fs-2" href="https://github.com/soheil9685">
@@ -23,7 +23,7 @@ function Footer() {
                                 </a>
                             </div>
                         </Col>
-                        <Col className="text-center">
+                        <Col className="text-center col-12 col-lg-6">
                             <img className="w-50" src={sign} alt="" />
                         </Col>
                     </Row>
