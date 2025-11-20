@@ -6,6 +6,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import SkillItem from "./components/Skills/SkillItem";
+import ProjectItem from "./components/Projects/ProjectItem";
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
             <Header />
             <Hero />
             <SkillItem />
+            <ProjectItem />
         </>
     )
 }
