@@ -30,7 +30,7 @@ function MyNavbar() {
                     <Offcanvas.Body>
                         <Nav className="justify-content-end flex-grow-1 pe-3">
                             <Nav.Link className="roboto fs-5 mx-2" href="#Header">Home</Nav.Link>
-                            <Nav.Link className="roboto fs-5 mx-2" href="#action2">Intro</Nav.Link>
+                            <Nav.Link className="roboto fs-5 mx-2" href="#Intro">Intro</Nav.Link>
                             <Nav.Link className="roboto fs-5 mx-2" href="#action2">Skills</Nav.Link>
                             <Nav.Link className="roboto fs-5 mx-2" href="#action2">Projects</Nav.Link>
                             <Nav.Link className="roboto fs-5 mx-2" href="#action2">Contact Me</Nav.Link>

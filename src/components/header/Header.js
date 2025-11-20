@@ -13,11 +13,11 @@ function Header() {
                 <Col className="col-lg-6">
                     <h1 data-aos="fade-down" style={{ marginBottom: "0px" }} className="tungsten introduce mt-5">Hi! I'm
                         <span className="name">
-                            <Typewriter cursor={true} cursorBlinking={true} loop={1} words={["Soheil Hosseini"]} />
+                            <Typewriter cursor={true} cursorBlinking={true} loop={1} words={[" Soheil Hosseini"]} />
                         </span>
                     </h1>
                     <h2 data-aos="fade-up" className="roboto">I'm a <span style={{ backgroundColor: "#1E2022", color: "#C9D6DF" }} className="fw-bold underline text-decoration-underline p-2 rounded"><Typewriter cursor={true} cursorBlinking={true} loop={0} words={["Front-end developer"]} /></span></h2>
-                    <div className="contactMeContainer mt-5">
+                    <div data-aos="fade-up" className="contactMeContainer mt-5">
                         <Button style={{borderRadius: "30px", backgroundColor: "#1E2022"}} className="roboto border-0 fs-5">Contact Me</Button>
                     </div>
                 </Col>
