@@ -5,7 +5,7 @@ import { Typewriter } from 'react-simple-typewriter'
 
 function ProjectItem() {
     return (
-        <Container className="mt-5">
+        <Container id="Project" className="mt-5">
             <h1 data-aos="zoom-in" className="roboto text-center">Projects</h1>
             <Row>
                 <Col>

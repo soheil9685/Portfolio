@@ -7,6 +7,7 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 import SkillItem from "./components/Skills/SkillItem";
 import ProjectItem from "./components/Projects/ProjectItem";
+import Contact from "./components/Contact/Contact";
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
             <Hero />
             <SkillItem />
             <ProjectItem />
+            <Contact />
         </>
     )
 }

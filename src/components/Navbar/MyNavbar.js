@@ -32,7 +32,7 @@ function MyNavbar() {
                             <Nav.Link className="roboto fs-5 mx-2" href="#Header">Home</Nav.Link>
                             <Nav.Link className="roboto fs-5 mx-2" href="#Intro">Intro</Nav.Link>
                             <Nav.Link className="roboto fs-5 mx-2" href="#Skill">Skills</Nav.Link>
-                            <Nav.Link className="roboto fs-5 mx-2" href="#action2">Projects</Nav.Link>
+                            <Nav.Link className="roboto fs-5 mx-2" href="#Project">Projects</Nav.Link>
                             <Nav.Link className="roboto fs-5 mx-2" href="#action2">Contact Me</Nav.Link>
                             <hr />
                             <div className="linkContainer d-lg-none">
