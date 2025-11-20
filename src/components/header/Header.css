@@ -1,0 +1,19 @@
+.introduce{
+    font-size: 80px;
+}
+.name{
+    color: #253B6E;
+}
+.social-link{
+    color: #000;
+    transition: all 0.7s !important;
+}
+.social-link:hover{
+    color: #229799;
+}
+.contactMeContainer button{
+    transition: all 0.5s;
+}
+.contactMeContainer button:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}

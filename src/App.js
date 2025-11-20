@@ -1,11 +1,20 @@
 import "./App.css"
+import Header from "./components/header/Header";
 import MyNavbar from "./components/Navbar/MyNavbar";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 function App() {
+
+    useEffect(()=>{
+        AOS.init();
+    } , [])
+
     return (
         <>
             <MyNavbar />
-            <h1>App</h1>
+            <Header />
         </>
     )
 }
