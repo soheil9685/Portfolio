@@ -5,6 +5,7 @@ import MyNavbar from "./components/Navbar/MyNavbar";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import SkillItem from "./components/Skills/SkillItem";
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
             <MyNavbar />
             <Header />
             <Hero />
+            <SkillItem />
         </>
     )
 }
