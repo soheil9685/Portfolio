@@ -1,7 +1,7 @@
 import { Col, Container, Row } from "react-bootstrap"
 import "./Hero.css"
 import { Typewriter } from 'react-simple-typewriter'
-import HeroImg from "../../assets/images/HeroImg.jpg"
+import HeroImg from "../../assets/images/HeroImg.webp"
 
 
 function Hero() {

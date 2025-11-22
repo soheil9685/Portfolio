@@ -5,12 +5,11 @@ import sign from "../../assets/images/Sign transparent.png"
 function Footer() {
     return (
         <footer>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#1E3E62" fill-opacity="1" d="M0,256L48,213.3C96,171,192,85,288,80C384,75,480,149,576,202.7C672,256,768,288,864,272C960,256,1056,192,1152,154.7C1248,117,1344,107,1392,101.3L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#1E3E62" fill-opacity="1" d="M0,256L80,229.3C160,203,320,149,480,160C640,171,800,245,960,256C1120,267,1280,213,1360,186.7L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
             <div className="container-fluid">
                 <Container>
                     <Row>
-                        <Col className="col-12 col-lg-6">
-                            <h5 style={{ color: "#FF6500" }} className="roboto">Portfolio.</h5>
+                        <Col className="col-12 text-center">
                             <div className="linkContainer mt-4">
                                 <a className="border-circle mx-2 fs-2" href="https://github.com/soheil9685">
                                     <i class="bi bi-github"></i>
@@ -23,17 +22,14 @@ function Footer() {
                                 </a>
                             </div>
                         </Col>
-                        <Col className="text-center col-12 col-lg-6">
-                            <img className="w-50" src={sign} alt="" />
-                        </Col>
                     </Row>
                     <Row>
                         <Col>
-                        <h6 style={{color: "#00B4D8"}} className="roboto text-center mt-3">
-                            <i color="#00B4D8" class="bi bi-c-circle mx-2"></i>
-                            Copyright Portfolio All Rights Reserved<br />
-                            Designed by Soheil Hosseini
-                        </h6>
+                            <h6 style={{ color: "#00B4D8" }} className="roboto text-center mt-3">
+                                <i color="#00B4D8" class="bi bi-c-circle mx-2"></i>
+                                Copyright Portfolio All Rights Reserved<br />
+                                Designed by Soheil Hosseini
+                            </h6>
                         </Col>
                     </Row>
                 </Container>

@@ -9,6 +9,6 @@ footer .container-fluid h5{
     color: #0B192C;
     transition: all 0.7s;
 }
-i:hover{
+.linkContainer a i:hover{
     color: #FF6500;
 }

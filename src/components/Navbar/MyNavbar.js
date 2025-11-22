@@ -11,7 +11,7 @@ function MyNavbar() {
     const expand = "lg"
 
     return (
-        <Navbar key={expand} expand={expand} className="mb-3">
+        <Navbar sticky="top" key={expand} expand={expand} className="mb-3">
             <Container>
                 <Navbar.Brand href="#">
                     <img className="icon img-fluid" src={sign} alt="" />
@@ -36,18 +36,18 @@ function MyNavbar() {
                             <Nav.Link className="roboto fs-5 mx-2" href="#ContactMe">Contact Me</Nav.Link>
                             <hr />
                             <div className="linkContainer d-lg-none">
-                                <Row className="row-cols-6">
-                                    <Col>
+                                <Row>
+                                    <Col className="col-2">
                                         <a className="media-link" href="https://github.com/soheil9685">
                                             <i class="bi bi-github fs-2"></i>
                                         </a>
                                     </Col>
-                                    <Col>
+                                    <Col className="col-2">
                                         <a className="media-link" href="https://www.instagram.com/_soheil9685_/">
                                             <i class="bi bi-instagram fs-2"></i>
                                         </a>
                                     </Col>
-                                    <Col>
+                                    <Col className="col-2">
                                         <a className="media-link" href="https://www.linkedin.com/in/mohammad-soheil-hosseini-6a3957333/">
                                             <i class="bi bi-linkedin fs-2"></i>
                                         </a>
