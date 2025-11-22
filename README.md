@@ -48,7 +48,7 @@ A brief biography:
 ---
 
 ## 🔗 Live Website  
-	[View](https://soheilhosseini.liara.run/)
+[View](https://soheilhosseini.liara.run/)
 
 ---
 
@@ -58,10 +58,10 @@ Follow these steps:
 
 ```bash
 # 1. Clone the repository
-git clone <https://github.com/soheil9685/Portfolio>
+git clone https://github.com/soheil9685/Portfolio
 
 # 2. Move into the project folder
-cd <portfoli>
+cd portfoli
 
 # 3. Install dependencies
 npm install
