@@ -34,20 +34,19 @@ function MyNavbar() {
                             <Nav.Link className="roboto fs-5 mx-2" href="#Skill">Skills</Nav.Link>
                             <Nav.Link className="roboto fs-5 mx-2" href="#Project">Projects</Nav.Link>
                             <Nav.Link className="roboto fs-5 mx-2" href="#ContactMe">Contact Me</Nav.Link>
-                            <hr />
                             <div className="linkContainer d-lg-none">
-                                <Row>
-                                    <Col className="col-2">
+                                <Row className="gx-5">
+                                    <Col className="col-1">
                                         <a className="media-link" href="https://github.com/soheil9685">
                                             <i class="bi bi-github fs-2"></i>
                                         </a>
                                     </Col>
-                                    <Col className="col-2">
+                                    <Col className="col-1">
                                         <a className="media-link" href="https://www.instagram.com/_soheil9685_/">
                                             <i class="bi bi-instagram fs-2"></i>
                                         </a>
                                     </Col>
-                                    <Col className="col-2">
+                                    <Col className="col-1">
                                         <a className="media-link" href="https://www.linkedin.com/in/mohammad-soheil-hosseini-6a3957333/">
                                             <i class="bi bi-linkedin fs-2"></i>
                                         </a>

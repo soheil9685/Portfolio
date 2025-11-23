@@ -25,7 +25,7 @@ function Footer() {
                     </Row>
                     <Row>
                         <Col>
-                            <h6 style={{ color: "#00B4D8" }} className="roboto text-center mt-3">
+                            <h6 style={{ color: "#00B4D8", fontSize: "12px" }} className="roboto text-center mt-3">
                                 <i color="#00B4D8" class="bi bi-c-circle mx-2"></i>
                                 Copyright Portfolio All Rights Reserved<br />
                                 Designed by Soheil Hosseini

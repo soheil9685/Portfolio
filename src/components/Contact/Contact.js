@@ -40,16 +40,14 @@ function Contact() {
     return (
         <Container id="ContactMe" className="mt-5">
             <h1 data-aos="zoom-in" className="roboto pt-5 text-center">Contact Me</h1>
-            <Row className="mt-4 d-flex align-items-center">
-                <Col className="col-12 col-lg-6 text-center">
-                    <img style={{borderRadius: "10px"}} className="w-75" src={ContactMe} alt="" />
-                </Col>
+            <div data-aos="zoom-in" style={{width: "50px", height: "3px", backgroundColor: "#000", margin: "auto", borderRadius: "10px"}}></div>
+            <Row className="mt-2 d-flex justify-content-center align-items-center">
                 <Col className="col-12 col-lg-6">
                     <div data-aos="fade-left" style={{ borderRadius: "10px" }} className="contact p-3">
                         {data.map(item => (
                             <div key={item.id} data-aos="fade-up" data-aos-delay={item.delay} style={{ backgroundColor: "#00B4D8", borderRadius: "10px", boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px", color: "#FFF4B7" }} className="contactItem p-1 d-flex align-items-center my-3">
                                 <i className={`${item.icon} fs-4`}></i>
-                                <span className="fs-5 roboto mx-2">{item.text}</span>
+                                <span style={{fontSize: "15px"}} className="roboto mx-2">{item.text}</span>
                             </div>
                         ))}
                     </div>
