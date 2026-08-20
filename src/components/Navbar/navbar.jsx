@@ -1,4 +1,5 @@
 import { use, useState } from "react";
+import sign from "../../assets/Images/Sign.png"
 
 function Navbar() {
 
@@ -17,7 +18,7 @@ function Navbar() {
     }
     return (
         <nav className={`px-20 lg:px-44 py-4 bg-[#0B0D0C] text-[#F4F1E8] flex items-center justify-between border-[0_0_2px_0] border-[#273029] sticky top-0 transition-all duration-300`}>
-            <h1 className="text-4xl font-[Space-Grotesk]">Soheil</h1>
+            <img src={sign} className="w-25" alt="" />
             <div className={`px-7 w-80 ${isOpen ? "max-lg:translate-x-0" : "max-lg:-translate-x-full"} absolute left-0 top-0 h-screen bg-[#111613] flex flex-col lg:tranl lg:static lg:h-auto lg:w-auto lg:inline lg:bg-transparent transition duration-700`}>
                 <div className="flex justify-between items-center mb-9 lg:mb-0">
                     <h1 className="text-4xl font-[Space-Grotesk] lg:hidden">Portfolio</h1>
@@ -27,10 +28,10 @@ function Navbar() {
                         </svg>
                     </button>
                 </div>
-                <a className="my-2.5 mx-3 lg:mx-7 text-lg text-[#A7ADA5] hidden md:inline hover:text-[#9FE870] hover:text-shadow-[0_0_15px] hover:text-shadow-[#9FE870] transition-all duration-300" href="#">Home</a>
-                <a className="my-2.5 mx-3 lg:mx-7 text-lg text-[#A7ADA5] hidden md:inline hover:text-[#9FE870] hover:text-shadow-[0_0_15px] hover:text-shadow-[#9FE870] transition-all duration-300" href="#">Skills</a>
-                <a className="my-2.5 mx-3 lg:mx-7 text-lg text-[#A7ADA5] hidden md:inline hover:text-[#9FE870] hover:text-shadow-[0_0_15px] hover:text-shadow-[#9FE870] transition-all duration-300" href="#">Projects</a>
-                <a className="my-2.5 mx-3 lg:mx-7 text-lg text-[#A7ADA5] hidden md:inline hover:text-[#9FE870] hover:text-shadow-[0_0_15px] hover:text-shadow-[#9FE870] transition-all duration-300" href="#">About</a>
+                <a className="inter my-2.5 mx-3 lg:mx-7 text-lg text-[#A7ADA5] hidden md:inline hover:text-[#9FE870] hover:text-shadow-[0_0_15px] hover:text-shadow-[#9FE870] transition-all duration-300" href="#">Home</a>
+                <a className="inter my-2.5 mx-3 lg:mx-7 text-lg text-[#A7ADA5] hidden md:inline hover:text-[#9FE870] hover:text-shadow-[0_0_15px] hover:text-shadow-[#9FE870] transition-all duration-300" href="#">Skills</a>
+                <a className="inter my-2.5 mx-3 lg:mx-7 text-lg text-[#A7ADA5] hidden md:inline hover:text-[#9FE870] hover:text-shadow-[0_0_15px] hover:text-shadow-[#9FE870] transition-all duration-300" href="#">Projects</a>
+                <a className="inter my-2.5 mx-3 lg:mx-7 text-lg text-[#A7ADA5] hidden md:inline hover:text-[#9FE870] hover:text-shadow-[0_0_15px] hover:text-shadow-[#9FE870] transition-all duration-300" href="#">About</a>
             </div>
             <div>
                 <button className="border p-2 rounded-md text-[#A7ADA5] border-[#273029] mr-10 lg:mr-0 hover:text-[#9FE870] hover:border-[#9FE870] hover:shadow-[0_0_15px] hover:shadow-[#9FE870] transition-all duration-300">
