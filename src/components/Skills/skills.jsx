@@ -14,6 +14,91 @@ import docker from "../../assets/Images/Docker.png"
 
 function Skills() {
 
+    // Front-end Skills
+    let frontend = [
+        {
+            index: 0,
+            img: html,
+            alt: "html",
+            text: "Html"
+        },
+        {
+            index: 1,
+            img: css,
+            alt: "css",
+            text: "Css"
+        },
+        {
+            index: 2,
+            img: js,
+            alt: "Js",
+            text: "Java Script"
+        },
+        {
+            index: 3,
+            img: react,
+            alt: "React",
+            text: "React Js"
+        },
+        {
+            index: 4,
+            img: bootstrap,
+            alt: "Bootstrap",
+            text: "Bootstrap"
+        },
+        {
+            index: 5,
+            img: tailwind,
+            alt: "Tailwind",
+            text: "Tailwind"
+        }
+    ]
+
+    // Back-end Skills
+    let backend = [
+        {
+            index: 0,
+            img: nodejs,
+            alt: "NodeJs",
+            text: "Node Js"
+        },
+        {
+            index: 1,
+            img: expressjs,
+            alt: "ExpressJs",
+            text: "Express Js"
+        },
+        {
+            index: 2,
+            img: mongodb,
+            alt: "MongoDB",
+            text: "Mongo DB"
+        },
+    ]
+
+    // Tools
+    let tools = [
+        {
+            index: 0,
+            img: git,
+            alt: "Git",
+            text: "Git"
+        },
+        {
+            index: 1,
+            img: github,
+            alt: "GitHub",
+            text: "GitHub"
+        },
+        {
+            index: 2,
+            img: docker,
+            alt: "Docker",
+            text: "Docker"
+        },
+    ]
+
+    // Expanding Skills
     let expandingSkills = [
         {
             index: 1,
@@ -49,8 +134,8 @@ function Skills() {
 
     return (
         <section className="bg-[#111613] border-b border-[#273029]">
-            <div className="grid grid-cols-12 py-18 px-5 md:px-10 lg:px-15 2xl:px-20">
-                <div className="col-span-12 xl:col-span-6">
+            <div className="grid grid-cols-12 py-18 mx-auto w-full sm:w-135 md:w-180 lg:w-240 xl:w-285 2xl:w-330">
+                <div className="col-span-12 xl:col-span-5">
                     <h1 className="space-grotesk text-[#9FE870] text-xl">
                         SKILLS
                         <div className="w-10 border-2 border-[#9FE870]"></div>
@@ -58,68 +143,38 @@ function Skills() {
                     <p className="text-5xl mt-5 w-60 text-[#F4F1E8] inter">Technologies I work with.</p>
                     <div className="">
                         <h1 className="text-[#A7ADA5] mt-7 space-grotesk">FRONT-END</h1>
-                        <div className="grid grid-cols-12">
-                            <div className="bg-[#0B0D0C] w-27 col-span-4 md:col-span-3 lg:col-span-2 2xl:col-span-2 my-2 border rounded-sm border-[#273029] flex flex-col items-center justify-around py-4 min-h-35">
-                                <img src={html} alt="Html" className="w-15" />
-                                <h1 className="text-[#A7ADA5] inter">Html</h1>
-                            </div>
-                            <div className="bg-[#0B0D0C] w-27 col-span-4 md:col-span-3 lg:col-span-2 2xl:col-span-2 my-2 border rounded-sm border-[#273029] flex flex-col items-center justify-around py-4 min-h-35">
-                                <img src={css} alt="Css" className="w-15" />
-                                <h1 className="text-[#A7ADA5] inter">Css</h1>
-                            </div>
-                            <div className="bg-[#0B0D0C] w-27 col-span-4 md:col-span-3 lg:col-span-2 my-2 border rounded-sm border-[#273029] flex flex-col items-center justify-around py-4 min-h-35">
-                                <img src={js} alt="Js" className="w-15" />
-                                <h1 className="text-[#A7ADA5] inter">Java Script</h1>
-                            </div>
-                            <div className="bg-[#0B0D0C] w-27 col-span-4 md:col-span-3 lg:col-span-2 my-2 border rounded-sm border-[#273029] flex flex-col items-center justify-around py-4 min-h-35">
-                                <img src={react} alt="React" className="w-15" />
-                                <h1 className="text-[#A7ADA5] inter">React Js</h1>
-                            </div>
-                            <div className="bg-[#0B0D0C] w-27 col-span-4 md:col-span-3 lg:col-span-2 my-2 border rounded-sm border-[#273029] flex flex-col items-center justify-around py-4 min-h-35">
-                                <img src={bootstrap} alt="Bootstrap" className="w-15" />
-                                <h1 className="text-[#A7ADA5] inter">Bootstrap</h1>
-                            </div>
-                            <div className="bg-[#0B0D0C] w-27 col-span-4 md:col-span-3 lg:col-span-2 my-2 border rounded-sm border-[#273029] flex flex-col items-center justify-around py-4 min-h-35">
-                                <img src={tailwind} alt="Tailwind" className="w-15" />
-                                <h1 className="text-[#A7ADA5] inter">Tailwind</h1>
-                            </div>
+                        <div className="flex flex-wrap gap-4">
+                            {frontend.map((item) => (
+                                <div key={item.index} className=" bg-[#0B0D0C] w-27 my-2 border rounded-sm border-[#273029] flex flex-col items-center justify-around py-4 min-h-35">
+                                    <img src={item.img} alt={item.alt} className="w-15" />
+                                    <h1 className="text-[#A7ADA5] inter">{item.text}</h1>
+                                </div>
+                            ))}
                         </div>
 
                         <h1 className="text-[#A7ADA5] mt-7 space-grotesk">BACK-END</h1>
-                        <div className="grid grid-cols-12">
-                            <div className="bg-[#0B0D0C] w-27 col-span-4 md:col-span-3 lg:col-span-2 my-2 border rounded-sm border-[#273029] flex flex-col items-center justify-around py-4 min-h-35">
-                                <img src={nodejs} alt="NodeJs" className="w-15" />
-                                <h1 className="text-[#A7ADA5] inter">Node Js</h1>
-                            </div>
-                            <div className="bg-[#0B0D0C] w-27 col-span-4 md:col-span-3 lg:col-span-2 my-2 border rounded-sm border-[#273029] flex flex-col items-center justify-around py-4 min-h-35">
-                                <img src={expressjs} alt="ExpressJs" className="w-15" />
-                                <h1 className="text-[#A7ADA5] inter">Express Js</h1>
-                            </div>
-                            <div className="bg-[#0B0D0C] w-27 col-span-4 md:col-span-3 lg:col-span-2 my-2 border rounded-sm border-[#273029] flex flex-col items-center justify-around py-4 min-h-35">
-                                <img src={mongodb} alt="MongoDB" className="w-15" />
-                                <h1 className="text-[#A7ADA5] inter">Mongo DB</h1>
-                            </div>
+                        <div className="flex flex-wrap gap-4">
+                            {backend.map((item) => (
+                                <div key={item.index} className=" bg-[#0B0D0C] w-27 my-2 border rounded-sm border-[#273029] flex flex-col items-center justify-around py-4 min-h-35">
+                                    <img src={item.img} alt={item.alt} className="w-15" />
+                                    <h1 className="text-[#A7ADA5] inter">{item.text}</h1>
+                                </div>
+                            ))}
                         </div>
 
                         <h1 className="text-[#A7ADA5] mt-7 space-grotesk">TOOLS</h1>
-                        <div className="grid grid-cols-12">
-                            <div className="bg-[#0B0D0C] w-27 col-span-4 md:col-span-3 lg:col-span-2 my-2 border rounded-sm border-[#273029] flex flex-col items-center justify-around py-4 min-h-35">
-                                <img src={git} alt="Git" className="w-15" />
-                                <h1 className="text-[#A7ADA5] inter">Git</h1>
-                            </div>
-                            <div className="bg-[#0B0D0C] w-27 col-span-4 md:col-span-3 lg:col-span-2 my-2 border rounded-sm border-[#273029] flex flex-col items-center justify-around py-4 min-h-35">
-                                <img src={github} alt="GitHub" className="w-15" />
-                                <h1 className="text-[#A7ADA5] inter">GitHub</h1>
-                            </div>
-                            <div className="bg-[#0B0D0C] w-27 col-span-4 md:col-span-3 lg:col-span-2 my-2 border rounded-sm border-[#273029] flex flex-col items-center justify-around py-4 min-h-35">
-                                <img src={docker} alt="Docker" className="w-15" />
-                                <h1 className="text-[#A7ADA5] inter">Docker</h1>
-                            </div>
+                        <div className="flex flex-wrap gap-4">
+                            {tools.map((item) => (
+                                <div key={item.index} className=" bg-[#0B0D0C] w-27 my-2 border rounded-sm border-[#273029] flex flex-col items-center justify-around py-4 min-h-35">
+                                    <img src={item.img} alt={item.alt} className="w-15" />
+                                    <h1 className="text-[#A7ADA5] inter">{item.text}</h1>
+                                </div>
+                            ))}
                         </div>
                     </div>
                 </div>
                 <div className="divider divider-horizontal rounded-2xl divider-success overflow-hidden"></div>
-                <div className="col-span-12 xl:col-span-5 mt-15 xl:mt-0">
+                <div className="col-span-12 xl:col-span-6 mt-15 xl:mt-0">
                     <h1 className="space-grotesk text-[#9FE870] text-xl">
                         CURRENTLY LEARNING
                         <div className="w-10 border-2 border-[#9FE870]"></div>
@@ -129,11 +184,11 @@ function Skills() {
                     {expandingSkills.map((skill) => (
                         <div key={skill.index} className="mt-10">
                             <div className="grid grid-cols-12 items-center">
-                                <h1 className="flex items-center justify-center text-2xl inter col-span-1 w-10 h-10 border border-[#9FE870] rounded-[50%] text-center text-[#9FE870] mr-3">{skill.index}</h1>
+                                <h1 className="col-span-1 flex items-center justify-center text-2xl inter w-10 h-10 border border-[#9FE870] rounded-[50%] text-center text-[#9FE870] mr-3">{skill.index}</h1>
                                 <h1 className="col-span-2 text-[#F4F1E8] inter text-2xl">{skill.name}</h1>
-                                <p className="col-span-4 inter w-50 text-sm text-[#A7ADA5]">{skill.description}</p>
-                                <div className="col-span-4 w-50 h-1 bg-[#273029] rounded-2xl">
-                                    <div className={`bg-[#9FE870] border-2 border-[#9FE870] w-[${skill.progress}] rounded-2xl`}></div>
+                                <p className="col-span-5 inter w-50 text-sm text-[#A7ADA5]">{skill.description}</p>
+                                <div className="col-span-3 mr-3 bg-[#273029] rounded-2xl">
+                                    <div style={{width: `${skill.progress}`}} className={`bg-[#9FE870] border-2 border-[#9FE870] rounded-2xl`}></div>
                                 </div>
                                 <p className="col-span-1 inter text-sm text-[#9FE870]">{skill.progress}</p>
                             </div>
