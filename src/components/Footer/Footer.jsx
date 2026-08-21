@@ -37,7 +37,7 @@ function Footer() {
                 <div className='col-span-12 md:col-span-6 lg:col-span-6 xl:col-span-3 mb-10 xl:mb-0 flex justify-center'>
                     <h1 className='inter text-4xl w-55 leading-12 text-justify text-[#F4F1E8]'>
                         LET'S BUILD SOMETHING <span className='text-[#9FE870]'>TOGETHER.</span>
-                    </h1>
+                    </h1> 
                 </div>
                 <div className='col-span-12 md:col-span-6 lg:col-span-6 xl:col-span-4 mb-10 xl:mb-0 flex flex-col items-center justify-center'>
                     <p className='text-[#A7ADA5]'>
