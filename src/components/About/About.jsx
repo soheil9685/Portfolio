@@ -29,23 +29,23 @@ function About() {
                         <img className="w-30 mt-7" src={Sign} alt="Sign" />
                     </div>
                 </div>
-                <div className="col-span-12 xl:col-span-6 xl:mt-0 mt-10 grid grid-cols-12 pl-10">
-                    <div className="mb-5 xl:mb-0 col-span-12 sm:col-span-6 lg:col-span-4 xl:col-span-3 text-center bg-[#0B0D0C] py-5 px-7 mx-2 rounded-xl border border-[#273029] flex flex-col items-center justify-center">
+                <div className="col-span-12 xl:col-span-6 xl:mt-0 mt-10 flex flex-wrap justify-center gap-3">
+                    <div className="w-37 text-center bg-[#0B0D0C] py-5 px-7 rounded-xl border border-[#273029] flex flex-col items-center justify-center">
                         <PersonIcon className="text-[#9FE870]" sx={{ fontSize: "50px" }} />
                         <h1 className="text-[#F4F1E8] text-6xl mt-3 mb-3">19</h1>
                         <p className="text-[#A7ADA5] text-xs">YEARS OLD</p>
                     </div>
-                    <div className="mb-5 xl:mb-0 col-span-12 sm:col-span-6 lg:col-span-4 xl:col-span-3 text-center bg-[#0B0D0C] py-5 px-7 mx-2 rounded-xl border border-[#273029] flex flex-col items-center justify-center">
+                    <div className="w-37 text-center bg-[#0B0D0C] py-5 px-7 rounded-xl border border-[#273029] flex flex-col items-center justify-center">
                         <CodeIcon className="text-[#9FE870]" sx={{ fontSize: "50px" }} />
                         <h1 className="text-[#F4F1E8] text-6xl mt-3 mb-3">+3</h1>
                         <p className="text-[#A7ADA5] text-xs">YEARS</p>
                     </div>
-                    <div className="mb-5 xl:mb-0 col-span-12 sm:col-span-6 lg:col-span-4 xl:col-span-3 text-center bg-[#0B0D0C] py-5 px-7 mx-2 rounded-xl border border-[#273029] flex flex-col items-center justify-center">
+                    <div className="w-37 text-center bg-[#0B0D0C] py-5 px-7 rounded-xl border border-[#273029] flex flex-col items-center justify-center">
                         <LayersIcon className="text-[#9FE870]" sx={{ fontSize: "50px" }} />
                         <h1 className="text-[#F4F1E8] text-6xl mt-3 mb-3">+10</h1>
                         <p className="text-[#A7ADA5] text-xs">TECHNOLOGIES</p>
                     </div>
-                    <div className="mb-5 xl:mb-0 col-span-12 sm:col-span-6 lg:col-span-4 xl:col-span-3 text-center bg-[#0B0D0C] py-5 px-7 mx-2 rounded-xl border border-[#273029] flex flex-col items-center justify-center">
+                    <div className="w-37 text-center bg-[#0B0D0C] py-5 px-7 rounded-xl border border-[#273029] flex flex-col items-center justify-center">
                         <AllInclusiveIcon className="text-[#9FE870]" sx={{ fontSize: "50px" }} />
                         <h1 className="text-[#F4F1E8] text-6xl mt-3 mb-3">
                             <AllInclusiveIcon sx={{ fontSize: "40px" }} />
