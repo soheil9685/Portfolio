@@ -27,13 +27,13 @@ function Hero() {
                         <a href="https://github.com/soheil9685">
                             <GitHubIcon fontSize="large" className="text-[#F4F1E8] mr-4 cursor-pointer" />
                         </a>
-                        <a href="https://www.linkedin.com/in/mohammad-soheil-hosseini-6a3957333/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3B2%2FZAXQvsQ9yxgPnBWF1k1g%3D%3D">
+                        <a href="www.linkedin.com/in/mohammad-soheil-hosseini-6a3957333">
                             <LinkedInIcon fontSize="large" className="text-[#F4F1E8] mr-4 cursor-pointer" />
                         </a>
-                        <a href="">
+                        <a href="https://t.me/canopus_msh">
                             <TelegramIcon fontSize="large" className="text-[#F4F1E8] mr-4 cursor-pointer" />
                         </a>
-                        <a href="">
+                        <a href="https://www.instagram.com/_soheil9685_/">
                             <InstagramIcon fontSize="large" className="text-[#F4F1E8] cursor-pointer" />
                         </a>
                     </div>

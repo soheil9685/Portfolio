@@ -21,14 +21,14 @@ function Projects() {
     return (
         <section className="bg-[#0B0D0C] border-b border-[#273029]">
             <div className="py-18 grid grid-cols-12 mx-auto w-full sm:w-135 md:w-180 lg:w-240 xl:w-285 2xl:w-330">
-                <div className="col-span-12 lg:col-span-4 xl:col-span-3 mb-10 xl:mb-0">
+                <div className="col-span-12 lg:col-span-4 xl:col-span-3 mb-10 xl:mb-0 mx-auto lg:mx-0">
                     <h1 className="space-grotesk text-[#9FE870] text-xl">
                         SKILLS
                         <div className="w-10 border-2 border-[#9FE870]"></div>
                     </h1>
                     <p className="text-5xl mt-5 w-70 text-[#F4F1E8] inter">Some things I've built.</p>
                 </div>
-                <div className="col-span-12 lg:col-span-8 xl:col-span-9 flex gap-4 flex-wrap">
+                <div className="col-span-12 lg:col-span-8 xl:col-span-9 flex gap-4 flex-wrap justify-center">
                     {projects.map((project) => (
                         <div key={project.index} className="w-90 bg-[#111613] rounded-lg border border-[#273029] overflow-hidden">
                             <div className="p-5">
