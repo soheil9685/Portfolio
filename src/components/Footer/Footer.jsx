@@ -25,7 +25,7 @@ function Footer() {
             text: "_soheil9685_"
         },
         {
-            index: 3,
+            index: 4,
             icon: LinkedInIcon,
             text: "_soheil9685_"
         }
@@ -56,7 +56,7 @@ function Footer() {
                         const Icon = link.icon
 
                         return (
-                            <p className='text-[#F4F1E8] inter mb-5'>
+                            <p key={link.index} className='text-[#F4F1E8] inter mb-5'>
                                 <Icon className='text-[#9FE870]' fontSize='medium' /> {link.text}
                             </p>
                         )

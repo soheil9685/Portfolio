@@ -36,8 +36,8 @@ function Projects() {
                                 <h1 className="space-grotesk text-2xl text-[#F4F1E8] mt-4">{project.title}</h1>
                                 <p className="inter text-[#A7ADA5] my-3 text-justify">{project.desc}</p>
                                 <div className="mt-5">
-                                    {project.techs.map((tech) => (
-                                        <span className="inter text-sm py-2 px-5 mr-2 bg-[#0B0D0C] text-[#A7ADA5] rounded-full">{tech}</span>
+                                    {project.techs.map((tech , index) => (
+                                        <span key={index} className="inter text-sm py-2 px-5 mr-2 bg-[#0B0D0C] text-[#A7ADA5] rounded-full">{tech}</span>
                                     ))}
                                 </div>
                             </div>
