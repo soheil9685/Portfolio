@@ -133,7 +133,7 @@ function Skills() {
     ]
 
     return (
-        <section className="bg-[#111613] border-b border-[#273029]">
+        <section id="skills" className="bg-[#111613] border-b border-[#273029]">
             <div className="grid grid-cols-12 py-18 mx-auto w-full sm:w-135 md:w-180 lg:w-240 xl:w-285 2xl:w-330">
                 <div className="col-span-12 xl:col-span-5">
                     <h1 className="space-grotesk text-[#9FE870] text-xl">

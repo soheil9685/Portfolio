@@ -8,7 +8,7 @@ import { Typewriter } from 'react-simple-typewriter'
 
 function Hero() {
     return (
-        <section className="mt-15  border-b-2 border-[#273029]">
+        <section id="hero" className="mt-15  border-b-2 border-[#273029]">
             <div className="mx-auto w-full sm:w-135 md:w-180 lg:w-240 xl:w-285 2xl:w-330 grid grid-cols-12">
                 <div className="col-span-12 mt-12 text-center mb-10 lg:col-span-6 lg:text-start">
                     <h5 className="text-[#9FE870] inter text-2xl my-2">HI, I'M</h5>

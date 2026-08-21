@@ -28,10 +28,10 @@ function Navbar() {
                         </svg>
                     </button>
                 </div>
-                <a className="inter my-2.5 mx-3 lg:mx-7 text-lg text-[#A7ADA5] md:inline hover:text-[#9FE870] hover:text-shadow-[0_0_15px] hover:text-shadow-[#9FE870] transition-all duration-300" href="#">Home</a>
-                <a className="inter my-2.5 mx-3 lg:mx-7 text-lg text-[#A7ADA5] md:inline hover:text-[#9FE870] hover:text-shadow-[0_0_15px] hover:text-shadow-[#9FE870] transition-all duration-300" href="#">Skills</a>
-                <a className="inter my-2.5 mx-3 lg:mx-7 text-lg text-[#A7ADA5] md:inline hover:text-[#9FE870] hover:text-shadow-[0_0_15px] hover:text-shadow-[#9FE870] transition-all duration-300" href="#">Projects</a>
-                <a className="inter my-2.5 mx-3 lg:mx-7 text-lg text-[#A7ADA5] md:inline hover:text-[#9FE870] hover:text-shadow-[0_0_15px] hover:text-shadow-[#9FE870] transition-all duration-300" href="#">About</a>
+                <a className="inter my-2.5 mx-3 lg:mx-7 text-lg text-[#A7ADA5] md:inline hover:text-[#9FE870] hover:text-shadow-[0_0_15px] hover:text-shadow-[#9FE870] transition-all duration-300" href="#hero" onClick={closeSideBar}>Home</a>
+                <a className="inter my-2.5 mx-3 lg:mx-7 text-lg text-[#A7ADA5] md:inline hover:text-[#9FE870] hover:text-shadow-[0_0_15px] hover:text-shadow-[#9FE870] transition-all duration-300" href="#about" onClick={closeSideBar}>About</a>
+                <a className="inter my-2.5 mx-3 lg:mx-7 text-lg text-[#A7ADA5] md:inline hover:text-[#9FE870] hover:text-shadow-[0_0_15px] hover:text-shadow-[#9FE870] transition-all duration-300" href="#skills" onClick={closeSideBar}>Skills</a>
+                <a className="inter my-2.5 mx-3 lg:mx-7 text-lg text-[#A7ADA5] md:inline hover:text-[#9FE870] hover:text-shadow-[0_0_15px] hover:text-shadow-[#9FE870] transition-all duration-300" href="#projects" onClick={closeSideBar}>Projects</a>
             </div>
             <div>
                 <button className="border p-2 rounded-md text-[#A7ADA5] border-[#273029] mr-10 lg:mr-0 hover:text-[#9FE870] hover:border-[#9FE870] hover:shadow-[0_0_15px] hover:shadow-[#9FE870] transition-all duration-300">
