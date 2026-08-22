@@ -9,14 +9,22 @@ import Footer from './components/Footer/Footer'
 
 function App() {
 
+  const [darkMode, setDarkMode] = useState(false);
+
+  const toggleTheme = () => {
+    setDarkMode(prev => !prev);
+    document.documentElement.classList.toggle("dark");
+  };
+
+
   return (
     <>
-      <Navbar />
-      <Hero />
-      <About />
-      <Skills />
-      <Projects />
-      <Footer />
+      <Navbar darkMode={darkMode} toggleTheme={toggleTheme}/>
+      <Hero darkMode={darkMode}/>
+      <About darkMode={darkMode}/>
+      <Skills darkMode={darkMode}/>
+      <Projects darkMode={darkMode}/>
+      <Footer darkMode={darkMode}/>
     </>
   )
 }
