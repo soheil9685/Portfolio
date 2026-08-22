@@ -9,7 +9,7 @@ import { Typewriter } from 'react-simple-typewriter'
 
 function Hero({darkMode}) {
     return (
-        <section id="hero" className="pt-15 border-b-2 border-[#273029] bg-[#F7F8F6] dark:bg-[#0B0D0C]">
+        <section id="hero" className="pt-15 border-b-2 border-[#E5E8E3] dark:border-[#273029] bg-[#F7F8F6] dark:bg-[#0B0D0C]">
             <div className="mx-auto w-full sm:w-135 md:w-180 lg:w-240 xl:w-285 2xl:w-330 grid grid-cols-12">
                 <div className="col-span-12 mt-12 text-center mb-10 lg:col-span-6 lg:text-start">
                     <h5 className="text-[#667085] dark:text-[#9FE870] inter text-2xl my-2">HI, I'M</h5>
@@ -26,16 +26,16 @@ function Hero({darkMode}) {
                     </div>
                     <div className="mt-6">
                         <a href="https://github.com/soheil9685">
-                            <GitHubIcon fontSize="large" className="text-[#171B20] dark:text-[#667085] mr-4 cursor-pointer" />
+                            <GitHubIcon fontSize="large" className="text-[#667085] dark:text-[#F4F1E8] mr-4 cursor-pointer" />
                         </a>
                         <a href="www.linkedin.com/in/mohammad-soheil-hosseini-6a3957333">
-                            <LinkedInIcon fontSize="large" className="text-[#171B20] dark:text-[#667085] mr-4 cursor-pointer" />
+                            <LinkedInIcon fontSize="large" className="text-[#667085] dark:text-[#F4F1E8] mr-4 cursor-pointer" />
                         </a>
                         <a href="https://t.me/canopus_msh">
-                            <TelegramIcon fontSize="large" className="text-[#171B20] dark:text-[#667085] mr-4 cursor-pointer" />
+                            <TelegramIcon fontSize="large" className="text-[#667085] dark:text-[#F4F1E8] mr-4 cursor-pointer" />
                         </a>
                         <a href="https://www.instagram.com/_soheil9685_/">
-                            <InstagramIcon fontSize="large" className="text-[#171B20] dark:text-[#667085] cursor-pointer" />
+                            <InstagramIcon fontSize="large" className="text-[#667085] dark:text-[#F4F1E8] cursor-pointer" />
                         </a>
                     </div>
                 </div>
