@@ -1,18 +1,52 @@
-# React + Vite
+# Portfolio website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is my personal developer portfolio, designed and built to introduce myself, showcase my projects, and provide an easy way to get in touch. The website focuses on clean UI, smooth interactions, responsive design and a modern developer aesthetic. I wanted the portfolio to be more than just a resume — it represents my journey, the technologies I work with, and the things I'm building along the way.
 
-Currently, two official plugins are available:
+## 🎯 Features
+- 🌙 Dark / ☀️ Light mode
+- 📱 Fully responsive design
+- 🎨 Modern and minimal UI
+- ⚡ Smooth animations and interactions
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🛠️ Technologies
+- Html
+- Css
+- Java Script
+- React Js
+- Tailwind
 
-## React Compiler
+## 🎨 Design
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+The design follows a minimal, modern and developer-oriented visual language.
 
-Note: This will impact Vite dev & build performances.
+### 🌙 Dark Theme
+- Background:     #0B0D0C
+- Surface:        #111613
+- Primary Text:   #F4F1E8
+- Secondary:      #A7ADA5
+- Accent:         #9FE870
+- Border:         #273029
+### ☀️ Light Theme
+- Background     #FCFCFB
+- Surface        #FFFFFF
+- Primary Text   #171B20
+- Secondary      #667085
+- Accent         #70C247
+- Border         #E5E8E3
+### 🔤 Typography
+- Space Grotesk — Headings
+- Inter — Body text
 
-## Expanding the ESLint configuration
+## 🚀 Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+#### Clone
+`git clone https://github.com/soheil9685/Portfolio`
+
+#### Change directory
+`cd portfolio`
+
+#### Install NPM & Packages
+`npm install`
+
+#### Run
+`npm run dev`

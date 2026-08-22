@@ -20,9 +20,7 @@ function About() {
                 </div>
                 <div className="col-span-12 xl:col-span-3 md:col-sapn-6">
                     <p className="text-[#F4F1E8] text-justify mt-8 inter">
-                        <Typewriter words={[`I'm 3rd-year Computer engineering at Shahed university. I'm a Full-Stack Developer and
-                        now I'm expanding my knowledges. I love to turn ideas to real projects. If you wanna join
-                        me get in touch!`]} typeSpeed={30} cursor={true} />
+                        <Typewriter words={[`I'm a 3rd-year Computer Engineering student at Shahed University. I'm a Full-Stack Developer who enjoys turning ideas into real-world projects. I'm constantly expanding my knowledge and exploring new technologies to improve my skills. If you'd like to work together, feel free to get in touch`]} typeSpeed={30} cursor={true} />
 
                     </p>
                     <div>
@@ -38,7 +36,7 @@ function About() {
                     <div className="w-37 text-center bg-[#0B0D0C] py-5 px-7 rounded-xl border border-[#273029] flex flex-col items-center justify-center">
                         <CodeIcon className="text-[#9FE870]" sx={{ fontSize: "50px" }} />
                         <h1 className="text-[#F4F1E8] text-6xl mt-3 mb-3">+3</h1>
-                        <p className="text-[#A7ADA5] text-xs">YEARS</p>
+                        <p className="text-[#A7ADA5] text-xs">YEARS LEARNING</p>
                     </div>
                     <div className="w-37 text-center bg-[#0B0D0C] py-5 px-7 rounded-xl border border-[#273029] flex flex-col items-center justify-center">
                         <LayersIcon className="text-[#9FE870]" sx={{ fontSize: "50px" }} />
