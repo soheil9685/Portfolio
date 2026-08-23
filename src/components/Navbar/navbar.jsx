@@ -17,7 +17,7 @@ function Navbar({darkMode  , toggleTheme}) {
         setIsOpen(false)
     }
     return (
-        <nav className={`bg-[#FCFCFB] dark:bg-[#0B0D0C] text-[#171B20] dark:text-[#F4F1E8] border-[#E5E8E3] dark:border-[#273029] px-20 lg:px-44 py-4 flex items-center justify-between border-[0_0_2px_0]  sticky top-0 transition-all duration-300`}>
+        <nav className={`bg-[#FCFCFB] dark:bg-[#0B0D0C] text-[#171B20] dark:text-[#F4F1E8] border-[#E5E8E3] dark:border-[#273029] px-10 lg:px-44 py-4 flex items-center justify-between border-[0_0_2px_0]  sticky top-0 transition-all duration-300`}>
             <img src={darkMode ? sign : signLight } className="w-25" alt="" />
             <div className={`px-7 w-80 ${isOpen ? "max-lg:translate-x-0" : "max-lg:-translate-x-full"} absolute left-0 top-0 h-screen bg-[#FCFCFB] dark:bg-[#111613] dark:lg:bg-transparent flex flex-col lg:tranl lg:static lg:h-auto lg:w-auto lg:inline lg:bg-transparent transition duration-700`}>
                 <div className="flex justify-between items-center mb-9 lg:mb-0">
