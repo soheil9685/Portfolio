@@ -50,7 +50,7 @@ function Hero({darkMode}) {
                     
                 </div>
                 <div className="col-span-12 text-center mb-5">
-                    <ArrowBackIosIcon fontSize="large" className="text-[#171B20] dark:text-[#F4F1E8] rotate-270 " />
+                    <ArrowBackIosIcon fontSize="large" className="text-[#171B20] dark:text-[#F4F1E8] rotate-27" />
                 </div>
             </div>
         </section>

@@ -64,10 +64,10 @@ function Footer() {
                 </div>
             </div>
             <div className='bg-[#F7F8F6] dark:bg-[#0B0D0C] grid grid-cols-2 py-2'>
-                <p className='text-[#667085] dark:text-[#A7ADA5] col-span-2 md:col-span-1 text-center'>
+                <p className='text-[#667085] dark:text-[#A7ADA5] col-span-2 md:col-span-1 text-center text-sm'>
                     <CopyrightIcon /> 2026. All rights reserved.
                 </p>
-                <p className='text-[#667085] dark:text-[#A7ADA5] col-span-2 md:col-span-1 text-center'>
+                <p className='text-[#667085] dark:text-[#A7ADA5] col-span-2 md:col-span-1 text-center text-sm'>
                     Designed & built by SOHEIL HOSSEINI.
                 </p>
             </div>
