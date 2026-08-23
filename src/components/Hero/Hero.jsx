@@ -21,8 +21,12 @@ function Hero({darkMode}) {
                         <Typewriter typeSpeed={20} words={["I build modern, interactive and user-focused web experiences with clean code and great performance."]} cursor={true} />
                     </p>
                     <div className="mt-15">
-                        <button className="inter cursor-pointer hover:shadow-[0_0_7px] hover:shadow-[#9FE870] mr-4 py-2 px-5 bg-[#9FE870] rounded-lg text-[#0B0D0C] transition-all duration-300">View my works</button>
-                        <button className="inter cursor-pointer text-[#171B20] hover:text-[#F7F8F6] dark:text-[#F4F1E8] py-2 px-5 border-[1.5px] border-[#9FE870] rounded-lg hover:bg-[#9FE870] dark:hover:text-[#0B0D0C] transition-all duration-300 hover:shadow-[0_0_5px] hover:shadow-[#9FE870]">Contact me</button>
+                        <button className="inter cursor-pointer hover:shadow-[0_0_7px] hover:shadow-[#9FE870] mr-4 py-2 px-5 bg-[#9FE870] rounded-lg text-[#0B0D0C] transition-all duration-300">
+                            <a href="#projects">View my works</a>
+                        </button>
+                        <button className="inter cursor-pointer text-[#171B20] hover:text-[#F7F8F6] dark:text-[#F4F1E8] py-2 px-5 border-[1.5px] border-[#9FE870] rounded-lg hover:bg-[#9FE870] dark:hover:text-[#0B0D0C] transition-all duration-300 hover:shadow-[0_0_5px] hover:shadow-[#9FE870]">
+                            <a href="#footer">Contact me</a>
+                        </button>
                     </div>
                     <div className="mt-6">
                         <a href="https://github.com/soheil9685">
@@ -42,9 +46,9 @@ function Hero({darkMode}) {
                 <div className="col-span-12 flex justify-center lg:col-span-6">
                     {
                         darkMode ? (
-                            <img className="w-100 text-left" src={heroDarkImg} alt="" />
+                            <img className="w-100 text-left" src={heroDarkImg} alt="HeroImg" />
                         ) : (
-                            <img className="w-100 text-left" src={heroImg} alt="" />
+                            <img className="w-100 text-left" src={heroImg} alt="HeroImg" />
                         )
                     }
                     

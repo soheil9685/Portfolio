@@ -13,7 +13,7 @@ function Projects() {
             title: "Portfolio",
             desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, ipsum.",
             techs: ["React Js", "Tailwind"],
-            demo: "soheil9685.vercel.app",
+            demo: "https://soheil9685.vercel.app",
             github: "https://github.com/soheil9685/Portfolio"
         }
     ]
