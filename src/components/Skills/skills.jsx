@@ -184,13 +184,14 @@ function Skills() {
                     {expandingSkills.map((skill) => (
                         <div key={skill.index} className="mt-10">
                             <div className="grid grid-cols-12 items-center">
-                                <h1 className="col-span-1 flex items-center justify-center text-2xl inter w-10 h-10 border border-[#9FE870] rounded-[50%] text-center text-[#9FE870] mr-3">{skill.index}</h1>
-                                <h1 className="col-span-2 text-[#171B20] dark:text-[#F4F1E8] inter text-2xl">{skill.name}</h1>
-                                <p className="col-span-5 inter w-50 text-sm text-[#667085] dark:text-[#A7ADA5]">{skill.description}</p>
-                                <div className="col-span-3 mr-3 bg-[#667085] dark:bg-[#273029] rounded-2xl">
+                                <h1 className="col-span-2 sm:col-span-1 flex items-center justify-center text-2xl inter w-10 h-10 border border-[#9FE870] rounded-[50%] text-center text-[#9FE870] mr-3">{skill.index}</h1>
+                                <h1 className=" col-span-3 sm:col-span-2 text-[#171B20] dark:text-[#F4F1E8] inter text-2xl">{skill.name}</h1>
+                                <p className="col-span-7 sm:col-span-5 inter w-50 text-sm text-[#667085] dark:text-[#A7ADA5]">{skill.description}</p>
+                                <div className="col-span-5 sm:hidden"></div>
+                                <div className="col-span-5 sm:col-span-3 mr-3 bg-[#667085] dark:bg-[#273029] rounded-2xl">
                                     <div style={{width: `${skill.progress}`}} className={`bg-[#9FE870] border-2 border-[#9FE870] rounded-2xl`}></div>
                                 </div>
-                                <p className="col-span-1 inter text-sm text-[#9FE870]">{skill.progress}</p>
+                                <p className="col-span-2 sm:col-span-1 inter text-sm text-[#9FE870]">{skill.progress}</p>
                             </div>
                         </div>
                     ))}
