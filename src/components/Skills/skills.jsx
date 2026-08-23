@@ -133,41 +133,41 @@ function Skills() {
     ]
 
     return (
-        <section id="skills" className="bg-[#111613] border-b border-[#273029]">
+        <section id="skills" className="bg-[#F7F8F6] dark:bg-[#111613] border-b border-[#273029]">
             <div className="grid grid-cols-12 py-18 mx-auto w-full sm:w-135 md:w-180 lg:w-240 xl:w-285 2xl:w-330">
                 <div className="col-span-12 xl:col-span-5">
                     <h1 className="space-grotesk text-[#9FE870] text-xl">
                         SKILLS
                         <div className="w-10 border-2 border-[#9FE870]"></div>
                     </h1>
-                    <p className="text-5xl mt-5 w-60 text-[#F4F1E8] inter">Technologies I work with.</p>
+                    <p className="text-5xl mt-5 w-60 text-[#171B20] dark:text-[#F4F1E8] inter">Technologies I work with.</p>
                     <div className="">
-                        <h1 className="text-[#A7ADA5] mt-7 space-grotesk">FRONT-END</h1>
+                        <h1 className="text-[#667085] dark:text-[#A7ADA5] mt-7 space-grotesk">FRONT-END</h1>
                         <div className="flex flex-wrap gap-4">
                             {frontend.map((item) => (
-                                <div key={item.index} className=" bg-[#0B0D0C] w-27 my-2 border rounded-sm border-[#273029] flex flex-col items-center justify-around py-4 min-h-35">
+                                <div key={item.index} className=" bg-[#F7F8F6] dark:bg-[#0B0D0C] w-27 my-2 border rounded-sm border-[#273029] flex flex-col items-center justify-around py-4 min-h-35">
                                     <img src={item.img} alt={item.alt} className="w-15" />
-                                    <h1 className="text-[#A7ADA5] inter">{item.text}</h1>
+                                    <h1 className="text-[#667085] dark:text-[#A7ADA5] inter">{item.text}</h1>
                                 </div>
                             ))}
                         </div>
 
-                        <h1 className="text-[#A7ADA5] mt-7 space-grotesk">BACK-END</h1>
+                        <h1 className="text-[#667085] dark:text-[#A7ADA5] mt-7 space-grotesk">BACK-END</h1>
                         <div className="flex flex-wrap gap-4">
                             {backend.map((item) => (
-                                <div key={item.index} className=" bg-[#0B0D0C] w-27 my-2 border rounded-sm border-[#273029] flex flex-col items-center justify-around py-4 min-h-35">
+                                <div key={item.index} className=" bg-[#F7F8F6] dark:bg-[#0B0D0C] w-27 my-2 border rounded-sm border-[#273029] flex flex-col items-center justify-around py-4 min-h-35">
                                     <img src={item.img} alt={item.alt} className="w-15" />
-                                    <h1 className="text-[#A7ADA5] inter">{item.text}</h1>
+                                    <h1 className="text-[#667085] dark:text-[#A7ADA5] inter">{item.text}</h1>
                                 </div>
                             ))}
                         </div>
 
-                        <h1 className="text-[#A7ADA5] mt-7 space-grotesk">TOOLS</h1>
+                        <h1 className="text-[#667085] dark:text-[#A7ADA5] mt-7 space-grotesk">TOOLS</h1>
                         <div className="flex flex-wrap gap-4">
                             {tools.map((item) => (
-                                <div key={item.index} className=" bg-[#0B0D0C] w-27 my-2 border rounded-sm border-[#273029] flex flex-col items-center justify-around py-4 min-h-35">
+                                <div key={item.index} className=" bg-[#F7F8F6] dark:bg-[#0B0D0C] w-27 my-2 border rounded-sm border-[#273029] flex flex-col items-center justify-around py-4 min-h-35">
                                     <img src={item.img} alt={item.alt} className="w-15" />
-                                    <h1 className="text-[#A7ADA5] inter">{item.text}</h1>
+                                    <h1 className="text-[#667085] dark:text-[#A7ADA5] inter">{item.text}</h1>
                                 </div>
                             ))}
                         </div>
@@ -179,15 +179,15 @@ function Skills() {
                         CURRENTLY LEARNING
                         <div className="w-10 border-2 border-[#9FE870]"></div>
                     </h1>
-                    <p className="text-3xl mt-5 w-60 text-[#F4F1E8] inter">Expanding my knowledge.</p>
+                    <p className="text-3xl mt-5 w-60 text-[#171B20] dark:text-[#F4F1E8] inter">Expanding my knowledge.</p>
                     {/* Expanding skills section */}
                     {expandingSkills.map((skill) => (
                         <div key={skill.index} className="mt-10">
                             <div className="grid grid-cols-12 items-center">
                                 <h1 className="col-span-1 flex items-center justify-center text-2xl inter w-10 h-10 border border-[#9FE870] rounded-[50%] text-center text-[#9FE870] mr-3">{skill.index}</h1>
-                                <h1 className="col-span-2 text-[#F4F1E8] inter text-2xl">{skill.name}</h1>
-                                <p className="col-span-5 inter w-50 text-sm text-[#A7ADA5]">{skill.description}</p>
-                                <div className="col-span-3 mr-3 bg-[#273029] rounded-2xl">
+                                <h1 className="col-span-2 text-[#171B20] dark:text-[#F4F1E8] inter text-2xl">{skill.name}</h1>
+                                <p className="col-span-5 inter w-50 text-sm text-[#667085] dark:text-[#A7ADA5]">{skill.description}</p>
+                                <div className="col-span-3 mr-3 bg-[#667085] dark:bg-[#273029] rounded-2xl">
                                     <div style={{width: `${skill.progress}`}} className={`bg-[#9FE870] border-2 border-[#9FE870] rounded-2xl`}></div>
                                 </div>
                                 <p className="col-span-1 inter text-sm text-[#9FE870]">{skill.progress}</p>
