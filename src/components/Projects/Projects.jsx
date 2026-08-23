@@ -30,7 +30,7 @@ function Projects() {
                 </div>
                 <div className="col-span-12 lg:col-span-8 xl:col-span-9 flex gap-4 flex-wrap justify-center">
                     {projects.map((project) => (
-                        <div key={project.index} className="w-90 bg-[#F7F8F6] dark:bg-[#111613] rounded-lg border border-[#E5E8E3] dark:border-[#98A0AA] overflow-hidden">
+                        <div key={project.index} className="w-90 bg-[#F7F8F6] dark:bg-[#111613] rounded-lg border border-[#E5E8E3] dark:border-[#273029] overflow-hidden">
                             <div className="p-5">
                                 <img className="rounded-xl" src={project.img} alt="Project01" />
                                 <h1 className="space-grotesk text-2xl text-[#171B20] dark:text-[#F4F1E8] mt-4">{project.title}</h1>
