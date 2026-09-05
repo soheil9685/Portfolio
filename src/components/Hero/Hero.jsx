@@ -6,8 +6,30 @@ import TelegramIcon from '@mui/icons-material/Telegram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import { Typewriter } from 'react-simple-typewriter'
+import { motion } from "motion/react";
 
-function Hero({darkMode}) {
+function Hero({ darkMode }) {
+
+    // Parent variants
+    const parentVariant = {
+        hidden: {},
+        visible: {
+            transition: {
+                staggerChildren: 0.2
+            }
+        }
+    }
+
+    // Child variants
+    const childVariants = {
+        hidden: {
+            opacity: 0
+        },
+        visible: {
+            opacity: 1
+        }
+    }
+
     return (
         <section id="hero" className="pt-15 border-b-2 border-[#E5E8E3] dark:border-[#273029] bg-[#F7F8F6] dark:bg-[#0B0D0C]">
             <div className="mx-auto w-full sm:w-135 md:w-180 lg:w-240 xl:w-285 2xl:w-330 grid grid-cols-12">
@@ -28,30 +50,42 @@ function Hero({darkMode}) {
                             <a href="#footer">Contact me</a>
                         </button>
                     </div>
-                    <div className="mt-6">
-                        <a href="https://github.com/soheil9685">
+                    <motion.div className="mt-6" variants={parentVariant} initial="hidden" animate="visible">
+                        <motion.a href="https://github.com/soheil9685" variants={childVariants}>
                             <GitHubIcon fontSize="large" className="text-[#667085] dark:text-[#F4F1E8] mr-4 cursor-pointer" />
-                        </a>
-                        <a href="www.linkedin.com/in/mohammad-soheil-hosseini-6a3957333">
+                        </motion.a>
+                        <motion.a href="www.linkedin.com/in/mohammad-soheil-hosseini-6a3957333" variants={childVariants}>
                             <LinkedInIcon fontSize="large" className="text-[#667085] dark:text-[#F4F1E8] mr-4 cursor-pointer" />
-                        </a>
-                        <a href="https://t.me/canopus_msh">
+                        </motion.a>
+                        <motion.a href="https://t.me/canopus_msh" variants={childVariants}>
                             <TelegramIcon fontSize="large" className="text-[#667085] dark:text-[#F4F1E8] mr-4 cursor-pointer" />
-                        </a>
-                        <a href="https://www.instagram.com/_soheil9685_/">
+                        </motion.a>
+                        <motion.a href="https://www.instagram.com/_soheil9685_/" variants={childVariants}>
                             <InstagramIcon fontSize="large" className="text-[#667085] dark:text-[#F4F1E8] cursor-pointer" />
-                        </a>
-                    </div>
+                        </motion.a>
+                    </motion.div>
                 </div>
                 <div className="col-span-12 flex justify-center lg:col-span-6">
                     {
                         darkMode ? (
-                            <img className="w-100 text-left" src={heroDarkImg} alt="HeroImg" />
+                            <motion.img className="w-100 text-left" src={heroDarkImg} alt="HeroImg"
+                                initial={{
+                                    x: 100,
+                                    opacity: 0
+                                }}
+                                whileInView={{
+                                    x: 0,
+                                    opacity: 1
+                                }}
+                                transition={{
+                                    duration: 0.5
+                                }}
+                            />
                         ) : (
-                            <img className="w-100 text-left" src={heroImg} alt="HeroImg" />
+                            <motion.img className="w-100 text-left" src={heroImg} alt="HeroImg" />
                         )
                     }
-                    
+
                 </div>
                 <div className="col-span-12 text-center mb-5">
                     <ArrowBackIosIcon fontSize="large" className="text-[#171B20] dark:text-[#F4F1E8] rotate-270" />
