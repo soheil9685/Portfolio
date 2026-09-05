@@ -1,17 +1,40 @@
 import portfolioImg from "../../assets/Images/portfolio.png"
+import { motion } from "motion/react";
 
 // Icons
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import { delay } from "motion";
 
 function Projects() {
+
+    // Parent variants
+    const parentVariant = {
+        hidden: {},
+        visible: {
+            transition: {
+                staggerChildren: 0.5,
+                delayChildren: 0.2
+            }
+        }
+    }
+
+    // Child variants
+    const childVariants = {
+        hidden: {
+            opacity: 0
+        },
+        visible: {
+            opacity: 1
+        }
+    }
 
     let projects = [
         {
             index: 1,
             img: portfolioImg,
             title: "Portfolio",
-            desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, ipsum.",
+            desc: "My portfolio website that was built as resume.",
             techs: ["React Js", "Tailwind"],
             demo: "https://soheil9685.vercel.app",
             github: "https://github.com/soheil9685/Portfolio"
@@ -21,16 +44,16 @@ function Projects() {
     return (
         <section id="projects" className="bg-[#F7F8F6] dark:bg-[#0B0D0C] border-b border-[#E5E8E3] dark:border-[#273029]">
             <div className="py-18 grid grid-cols-12 mx-auto w-full sm:w-135 md:w-180 lg:w-240 xl:w-285 2xl:w-330">
-                <div className="col-span-12 lg:col-span-4 xl:col-span-3 mb-10 xl:mb-0 mx-auto lg:mx-0">
+                <motion.div className="col-span-12 lg:col-span-4 xl:col-span-3 mb-10 xl:mb-0 mx-auto lg:mx-0" initial={{ x: -100, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} transition={{ duration: 0.5 }}>
                     <h1 className="space-grotesk text-[#9FE870] text-xl">
                         PROJECTS
                         <div className="w-10 border-2 border-[#9FE870]"></div>
                     </h1>
                     <p className="text-5xl mt-5 w-70 text-[#171B20] dark:text-[#F4F1E8] inter">Some things I've built.</p>
-                </div>
-                <div className="col-span-12 lg:col-span-8 xl:col-span-9 flex gap-4 flex-wrap justify-center">
+                </motion.div>
+                <motion.div className="col-span-12 lg:col-span-8 xl:col-span-9 flex gap-4 flex-wrap justify-center" variants={parentVariant} initial="hidden" whileInView="visible">
                     {projects.map((project) => (
-                        <div key={project.index} className="w-90 bg-[#F7F8F6] dark:bg-[#111613] rounded-lg border border-[#E5E8E3] dark:border-[#273029] overflow-hidden">
+                        <motion.div key={project.index} className="w-90 bg-[#F7F8F6] dark:bg-[#111613] rounded-lg border border-[#E5E8E3] dark:border-[#273029] overflow-hidden" variants={childVariants}>
                             <div className="p-5">
                                 <img className="rounded-xl" src={project.img} alt="Project01" />
                                 <h1 className="space-grotesk text-2xl text-[#171B20] dark:text-[#F4F1E8] mt-4">{project.title}</h1>
@@ -49,10 +72,10 @@ function Projects() {
                                     <GitHubIcon fontSize="small" /> View on GitHub <OpenInNewIcon fontSize="small" />
                                 </a>
                             </div>
-                        </div>
+                        </motion.div>
                     ))}
 
-                </div>
+                </motion.div>
             </div>
         </section>
     )
