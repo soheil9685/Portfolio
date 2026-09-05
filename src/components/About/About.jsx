@@ -33,7 +33,7 @@ function About() {
     return (
         <section id="about" className="bg-[#FCFCFB] dark:bg-[#111613] border-b border-[#E5E8E3] dark:border-[#273029]">
             <div className="grid grid-cols-12 py-18 mx-auto w-full sm:w-135 md:w-180 lg:w-240 xl:w-285 2xl:w-330">
-                <motion.div className="col-span-12 md:col-sapn-6 xl:col-span-3" initial={{ x: -100, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ duration: 0.5 }}>
+                <motion.div className="col-span-12 md:col-sapn-6 xl:col-span-3" initial={{ x: -100, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} transition={{ duration: 0.5 }}>
                     <h1 className="space-grotesk text-[#9FE870] text-xl">
                         ABOUT ME
                         <div className="w-10 border-2 border-[#9FE870]"></div>
@@ -49,7 +49,7 @@ function About() {
                         <img className="w-30 mt-7" src={Sign} alt="Sign" />
                     </div>
                 </div>
-                <motion.div className="col-span-12 xl:col-span-6 xl:mt-0 mt-10 flex flex-wrap justify-center gap-3" variants={parentVariant} initial="hidden" animate="visible">
+                <motion.div className="col-span-12 xl:col-span-6 xl:mt-0 mt-10 flex flex-wrap justify-center gap-3" variants={parentVariant} initial="hidden" whileInView="visible">
                     <motion.div className="h-50 w-37 text-center bg-[#F7F8F6] dark:bg-[#0B0D0C] py-5 px-7 rounded-xl border border-[#273029] flex flex-col items-center justify-center" variants={childVariants}>
                         <PersonIcon className="text-[#9FE870]" sx={{ fontSize: "50px" }} />
                         <h1 className="text-[#171B20] dark:text-[#F4F1E8] text-6xl mt-3 mb-3">19</h1>
