@@ -7,6 +7,7 @@ import PersonIcon from '@mui/icons-material/Person';
 import CodeIcon from '@mui/icons-material/Code';
 import LayersIcon from '@mui/icons-material/Layers';
 import AllInclusiveIcon from '@mui/icons-material/AllInclusive';
+import Container from "../Common/Container/Container";
 
 function About() {
 
@@ -32,7 +33,7 @@ function About() {
 
     return (
         <section id="about" className="bg-[#FCFCFB] dark:bg-[#111613] border-b border-[#E5E8E3] dark:border-[#273029]">
-            <div className="grid grid-cols-12 py-18 mx-auto w-full sm:w-135 md:w-180 lg:w-240 xl:w-285 2xl:w-330">
+            <Container className="grid grid-cols-12 py-18">
                 <motion.div className="col-span-12 md:col-sapn-6 xl:col-span-3" initial={{ x: -100, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} transition={{ duration: 0.5 }}>
                     <h1 className="space-grotesk text-[#9FE870] text-xl">
                         ABOUT ME
@@ -73,7 +74,7 @@ function About() {
                         <p className="text-[#667085] dark:text-[#A7ADA5] text-xs">THINGS TO BUILD</p>
                     </motion.div>
                 </motion.div>
-            </div>
+            </Container>
         </section>
     )
 }

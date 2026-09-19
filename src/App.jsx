@@ -19,12 +19,14 @@ function App() {
 
   return (
     <>
-      <Navbar darkMode={darkMode} toggleTheme={toggleTheme}/>
-      <Hero darkMode={darkMode}/>
-      <About darkMode={darkMode}/>
-      <Skills darkMode={darkMode}/>
-      <Projects darkMode={darkMode}/>
-      <Footer darkMode={darkMode}/>
+      <Navbar darkMode={darkMode} toggleTheme={toggleTheme} />
+      <main>
+        <Hero darkMode={darkMode} />
+        <About darkMode={darkMode} />
+        <Skills darkMode={darkMode} />
+        <Projects darkMode={darkMode} />
+      </main>
+      <Footer darkMode={darkMode} />
     </>
   )
 }

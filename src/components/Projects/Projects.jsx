@@ -4,7 +4,7 @@ import { motion } from "motion/react";
 // Icons
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import { delay } from "motion";
+import Container from "../Common/Container/Container";
 
 function Projects() {
 
@@ -43,8 +43,8 @@ function Projects() {
 
     return (
         <section id="projects" className="bg-[#F7F8F6] dark:bg-[#0B0D0C] border-b border-[#E5E8E3] dark:border-[#273029]">
-            <div className="py-18 grid grid-cols-12 mx-auto w-full sm:w-135 md:w-180 lg:w-240 xl:w-285 2xl:w-330">
-                <motion.div className="col-span-12 lg:col-span-4 xl:col-span-3 mb-10 xl:mb-0 mx-auto lg:mx-0" initial={{ x: -100, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} transition={{ duration: 0.5 }}>
+            <Container className="py-18 grid grid-cols-12">
+                <motion.div className="col-span-12 lg:col-span-4 xl:col-span-3 mb-10 xl:mb-0 lg:mx-0" initial={{ x: -100, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} transition={{ duration: 0.5 }}>
                     <h1 className="space-grotesk text-[#9FE870] text-xl">
                         PROJECTS
                         <div className="w-10 border-2 border-[#9FE870]"></div>
@@ -76,7 +76,7 @@ function Projects() {
                     ))}
 
                 </motion.div>
-            </div>
+            </Container>
         </section>
     )
 }

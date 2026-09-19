@@ -13,6 +13,7 @@ import mongodb from "../../assets/Images/MongoDB.png"
 import git from "../../assets/Images/Git.png"
 import github from "../../assets/Images/Github.png"
 import docker from "../../assets/Images/Docker.png"
+import Container from "../Common/Container/Container";
 
 function Skills() {
 
@@ -157,7 +158,7 @@ function Skills() {
 
     return (
         <section id="skills" className="bg-[#F7F8F6] dark:bg-[#111613] border-b border-[#E5E8E3] dark:border-[#273029]">
-            <div className="grid grid-cols-12 py-18 mx-auto w-full sm:w-135 md:w-180 lg:w-240 xl:w-285 2xl:w-330">
+            <Container className="grid grid-cols-12 py-18 mx-auto w-full sm:w-135 md:w-180 lg:w-240 xl:w-285 2xl:w-330">
                 <div className="col-span-12 xl:col-span-5">
                     <motion.div initial={{ x: -100, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} transition={{ duration: 0.5 }}>
                         <h1 className="space-grotesk text-[#9FE870] text-xl">
@@ -225,7 +226,7 @@ function Skills() {
                         ))}
                     </motion.div>
                 </div>
-            </div>
+            </Container>
         </section>
     )
 }

@@ -7,6 +7,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import { Typewriter } from 'react-simple-typewriter'
 import { motion } from "motion/react";
+import Container from "../Common/Container/Container";
 
 function Hero({ darkMode }) {
 
@@ -32,10 +33,10 @@ function Hero({ darkMode }) {
 
     return (
         <section id="hero" className="pt-15 border-b-2 border-[#E5E8E3] dark:border-[#273029] bg-[#F7F8F6] dark:bg-[#0B0D0C]">
-            <div className="mx-auto w-full sm:w-135 md:w-180 lg:w-240 xl:w-285 2xl:w-330 grid grid-cols-12">
+            <Container>
                 <div className="col-span-12 mt-12 text-center mb-10 lg:col-span-6 lg:text-start">
                     <h5 className="text-[#667085] dark:text-[#9FE870] inter text-2xl my-2">HI, I'M</h5>
-                    <h1 className="space-grotesk text-7xl my-2 text-[#171B20] dark:text-[#F4F1E8]">Mohammad Soheil.</h1>
+                    <h1 className="space-grotesk text-6xl my-2 text-[#171B20] dark:text-[#F4F1E8]">Mohammad Soheil.</h1>
                     <p className="text-[#667085] dark:text-[#9FE870] inter text-3xl my-3">
                         <Typewriter words={["Full Stack Developer"]} cursor={true} />
                     </p>
@@ -90,7 +91,7 @@ function Hero({ darkMode }) {
                 <div className="col-span-12 text-center mb-5">
                     <ArrowBackIosIcon fontSize="large" className="text-[#171B20] dark:text-[#F4F1E8] rotate-270" />
                 </div>
-            </div>
+            </Container>
         </section>
     )
 }
